@@ -1,0 +1,9 @@
+.text-shadow {
+  text-shadow: 5px 5px 5px rgb(240, 232, 232);
+}
+.text-shadow-lg {
+  text-shadow: 9px -4px 16px rgba(246, 245, 245);
+}
+.text-shadown-developer {
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 40px white, 0 0 60px white;
+}
