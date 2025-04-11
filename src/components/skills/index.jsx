@@ -2,8 +2,8 @@
 
 function Skills() {
     return (
-        <div id="skills" className="justify-center items-center flex flex-col my-10">
-            <h1 className="text-3xl mb-4" >Skills</h1>
+        <div id="skills" className="justify-center items-center flex flex-col my-10 h-[50rem]">
+            <h1 className="text-3xl mb-4" >Tecnologías</h1>
             {/* flexDirection='row' flexWrap='wrap' gap='50' alignContent='center' justifyContent='center'  */}
             <div className="flex row gap-6 flex-wrap w-[80%] justify-center items-center">
                 <img src='https://icongr.am/devicon/javascript-original.svg?size=64&color=currentColor' alt="icon-js" width='60' data-toggle="tooltip" title="Javascript" />

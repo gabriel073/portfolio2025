@@ -25,15 +25,15 @@ const projects = [
         title: "MultiGames",
         description: "Multi Games es una aplicación web con un menú que contiene 3 juegos clásicos que atrapa al usuario a entrenerse y salir un poco de la rutina, el clásico juego de memoria donde hay que encontrar en un tablero ramdon, las 2 fichas que coinciden, el tipico tipeador de palabras por tiempo, y adivina pokemon donde aparece la silueta de personajes ramdon detrás de unas hierbas y tendrás que saber de quién se trata.",
         image: "/../public/assets/multiGames.png",
-        technologies: ["Next.js", "MongoDB", "Tailwind CSS"],
-        github: "https://github.com/gabriel073/multiProjects",
+        technologies: ["React", "react-router-dom", "Chakra-ui", "Sweetalert2", "GIT", "GitHub"],
+        github: "https://github.com/gabriel073/multi-games/",
         liveDemo: "https://multi-games.vercel.app/"
     },
     {
         id: 4,
         title: "Recipes App",
         description: "Recipes App fue realizada para consultar recetas, crear, actualizar, eliminar, podes filtrar por tipos, ordenar alfabéticamente, fue realizada durante el bootcamp soy henry.",
-        image: "../../../public/assets/recipesApp.png",
+        image: "/../public/assets/recipesApp.png",
         technologies: ["React", "Javascript", "Tailwind CSS", "Node.js", "Redux", "ChakraUI", "Express", "Git", "Github", "Scrum", "Notion", "dotenv", "axios"],
         github: "https://github.com/gabriel073/PI_FOOD",
         liveDemo: "https://youtu.be/8bP8FS9GXc0"
@@ -42,20 +42,20 @@ const projects = [
     {
         id: 6,
         title: "Tu Asistencia",
-        description: "Aplicación para organizar tareas diarias de manera eficiente.",
-        image: "../../../public/assets/tuAsistencia.png",
-        technologies: ["Next.js", "MongoDB", "Tailwind CSS"],
-        github: "https://github.com/tu-usuario/task-manager",
-        demliveDemo: "https://task-manager.com"
+        description: " Este proyecto pretende solucionar el ingreso y egreso del personal de determinado trabajo, contiene autentificación de administrador, notificación por mail al autenticar, un crud de empleados el cual se puede crear, modificar y eliminar, solicitud de informes por fecha, opciones de impresion de datos.",
+        image: "/../public/assets/tuAsistencia.png",
+        technologies: ["React", "Javascript", "typescript", "Vite", "Tailwind CSS", "Node.js", "ChakraUI", "Express", "Git", "Github", "Scrum", "Notion", "dotenv", "axios", "formik", "sweetalert2", "cors", "express", "nodemailer", "sequelize"],
+        github: "https://github.com/molder26/tuasistencia/tree/gabyDev",
+        liveDemo: "https://youtu.be/KbMPKyy1kQ8"
     },
     {
         id: 3,
-        title: "psicoEspacio",
-        description: "Aplicación para organizar tareas diarias de manera eficiente.",
-        image: "../../../public/assets/psicoEspacio.png",
-        technologies: ["Next.js", "MongoDB", "Tailwind CSS"],
-        github: "https://github.com/tu-usuario/task-manager",
-        liveDemo: "https://task-manager.com"
+        title: "PsicoEspacio",
+        description: "Landing Page de un grupo de psicólogas que brindan su servicio en línea, este pryecto es interesante porque se trabajó con una diseñadora UI, es notable su trabajo, se tuvo que respetar las maquetas de figma con sus propiedades para llegar al diseño realizado, una gran experiencia del trabajo en equipo.-",
+        image: "/../public/assets/psicoEspacio.png",
+        technologies: ["HTML", "CSS", "Boostrap", "Figma", "Javascript", "scrum", "GIT", "GitHub"],
+        github: "https://github.com/gabriel073/land_page_psicoEspacio",
+        liveDemo: "https://psicoespacio-web.vercel.app/"
     },
 
 ];
@@ -63,9 +63,9 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-sm hover:shadow-lg transition-all">
+        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-sm hover:shadow-lg transition-all  h-full flex flex-col">
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-4">
+            <div className="flex flex-col p-4 flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
                 <p className="text-gray-600 mt-2">{project.description}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -78,7 +78,8 @@ const ProjectCard = ({ project }) => {
                         </span>
                     ))}
                 </div>
-                <div className="mt-4 flex justify-between">
+                <div className="flex-grow" />
+                <div className=" flex  justify-between mt-4">
                     <a
                         href={project.github}
                         target="_blank"
@@ -95,6 +96,7 @@ const ProjectCard = ({ project }) => {
                     >
                         Ver Proyecto
                     </a>
+
                 </div>
             </div>
         </div>
