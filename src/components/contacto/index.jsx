@@ -62,12 +62,12 @@ function Contact() {
     const paternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return (
 
-        <div className="flex justify-center items-center flex-col text-3xl my-10">
+        <div className="flex justify-center items-center flex-col text-3xl my-10" id='contact'>
 
 
             <div className="mb-[150px] m-auto h-auto w-[500px] align-center spacing-[3] rounded-3xl border-solid border-black border-2 shadow-xl p-4">
                 <div id="contacto">
-                    <h1 className="text-4xl text-center mb-5">Contacto</h1>
+                    <h1 className="text-4xl text-center mb-5" >Contacto</h1>
 
                     <form ref={form} onSubmit={sendEmail}>
                         <label>Nombre</label>
@@ -106,7 +106,7 @@ function Contact() {
                         </div>
 
                         <div className=' flex justify-center'>
-                            <input type="submit" value="Send" className='bg-[blue] cursor-pointer  rounded-md mt-[30px] w-[40%] h-[40px] ' />
+                            <input type="submit" value="Enviar" className='bg-[blue] cursor-pointer text-white text-xl  rounded-md mt-[30px] w-[30%] h-[40px] ' />
                         </div>
 
                     </form>
