@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
+
 function Contact() {
 
     const form = useRef();
@@ -61,62 +62,60 @@ function Contact() {
     }
     const paternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return (
+        <div className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4 " id='contact'>
+            <div className=" m-auto w-96 spacing-[3] rounded-3xl border-solid border-black border-2 shadow-xl p-4">
 
-        <div className="flex justify-center items-center flex-col text-3xl my-10" id='contact'>
+                <h1 className="text-4xl text-center mb-5" >Contacto</h1>
 
+                <form ref={form} onSubmit={sendEmail}>
+                    <label>Nombre</label>
+                    <input
+                        type='text'
+                        id='name'
+                        name='user_name'
+                        className="h-[25px] w-[100%] mb-[15px] p-4 border-solid border-slate-400 border-[0.5px] rounded-md"
+                        // value={formData.name}
+                        onChange={handleInputChange}
+                    />
+                    <div className="text-red-500 mb-[0px] mt-[0px]">
+                        {nameError && <p>{nameError}</p>}
+                    </div>
+                    <label>Email</label>
+                    <input type='email'
+                        id='email'
+                        name='user_email' className="h-[25px] w-[100%] p-4 mb-[15px] border-solid border-slate-400 border-[0.5px] rounded-md"
+                        // value={formData.email}
+                        onChange={handleInputChange}
 
-            <div className="mb-[150px] m-auto h-auto w-[500px] align-center spacing-[3] rounded-3xl border-solid border-black border-2 shadow-xl p-4">
-                <div id="contacto">
-                    <h1 className="text-4xl text-center mb-5" >Contacto</h1>
+                    />
+                    <div className="text-red-500 mb-[0px] mt-[0px]" >
+                        {emailError && <p>{emailError}</p>}
+                    </div>
+                    <label>Mensaje</label>
+                    <textarea id='message' name='message' rows={8}
+                        cols={50} className="mb-[-30px] w-[100%] p-4 border-solid border-slate-400 border-[0.5px] rounded-md"
 
-                    <form ref={form} onSubmit={sendEmail}>
-                        <label>Nombre</label>
-                        <input
-                            type='text'
-                            id='name'
-                            name='user_name'
-                            className="h-[25px] w-[100%] mb-[15px] p-4 border-solid border-slate-400 border-[0.5px] rounded-md"
-                            // value={formData.name}
-                            onChange={handleInputChange}
-                        />
-                        <div className="text-red-500 mb-[0px] mt-[0px]">
-                            {nameError && <p>{nameError}</p>}
-                        </div>
-                        <label>Email</label>
-                        <input type='email'
-                            id='email'
-                            name='user_email' className="h-[25px] w-[100%] p-4 mb-[15px] border-solid border-slate-400 border-[0.5px] rounded-md"
-                            // value={formData.email}
-                            onChange={handleInputChange}
+                        // value={formData.message}
+                        onChange={handleInputChange}
+                        required
+                    ></textarea>
+                    <div className="text-red-500 mb-[0px] mt-[0px]">
+                        {messageError && <p>{messageError}</p>}
+                    </div>
 
-                        />
-                        <div className="text-red-500 mb-[0px] mt-[0px]" >
-                            {emailError && <p>{emailError}</p>}
-                        </div>
-                        <label>Mensaje</label>
-                        <textarea id='message' name='message' rows={8}
-                            cols={50} className="mb-[-30px] w-[100%] p-4 border-solid border-slate-400 border-[0.5px] rounded-md"
+                    <div className=' flex justify-center'>
+                        <input type="submit" value="Enviar" className='bg-[blue] cursor-pointer text-white text-lg  rounded-md mt-[30px] w-[30%] h-[40px] ' />
+                    </div>
 
-                            // value={formData.message}
-                            onChange={handleInputChange}
-                            required
-                        ></textarea>
-                        <div className="text-red-500 mb-[0px] mt-[0px]">
-                            {messageError && <p>{messageError}</p>}
-                        </div>
+                </form>
 
-                        <div className=' flex justify-center'>
-                            <input type="submit" value="Enviar" className='bg-[blue] cursor-pointer text-white text-xl  rounded-md mt-[30px] w-[30%] h-[40px] ' />
-                        </div>
-
-                    </form>
-                </div>
             </div >
             <hr className='border-solid border-slate-400 border-[0.5px] w-[98%] ' />
-            <div className="mt-[10px]" >
+            <div className="mt-[10px] text-center" >
                 <p >By Gabriel 🤓</p>
             </div>
         </div>
+
     )
 }
 

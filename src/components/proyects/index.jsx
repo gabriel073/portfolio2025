@@ -65,7 +65,7 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-sm hover:shadow-lg transition-all  h-full flex flex-col">
+        <div className="bg-[#f0f0f0] opacity-65  hover:scale-105 hover:opacity-100 hover:shadown-xl rounded-xl shadow-md overflow-hidden max-w-sm hover:shadow-lg transition-all  h-full flex flex-col">
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="flex flex-col p-4 flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
@@ -98,7 +98,6 @@ const ProjectCard = ({ project }) => {
                     >
                         Ver Proyecto
                     </a>
-
                 </div>
             </div>
         </div>
@@ -107,17 +106,17 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsGrid = () => {
     return (
-        <>
+        <div className=" bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover ">
             <MenuFlotatnte />
-            <div className="container mx-auto px-4 py-10">
+            <div className="container mx-auto px-4 py-10 ">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-6" id="proyects">Mis Proyectos</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 export default ProjectsGrid;
