@@ -2,10 +2,9 @@
   position: fixed;
   top: 85%;
   width: 30%;
-  display: none; /* Ocultar inicialmente */
   background-color: #f0f0f0;
-  z-index: 1000; /* Asegurar que esté sobre otros elementos */
-  left: 34.5%;
+  z-index: 1000;
+  left: 35%;
   opacity: 0.8;
 }
 

@@ -79,7 +79,7 @@ function Header() {
                 </div>
                 <div className="flex justify-center sm:justify-end mt-4 sm:mt-[-18px] sm:mr-6">
                     <button className="border p-2 sm:p-1.5 rounded-xl text-shadow-lg hover:bg-violet-500 hover:text-violet-950 transition-all">
-                        Contacto
+                        <a href="#contact">Contacto</a>
                     </button>
                 </div>
             </div>

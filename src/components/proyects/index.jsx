@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-
 import MenuFlotatnte from "../menu";
-
 
 const projects = [
     {
@@ -65,7 +63,10 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
     return (
+
+
         <div className="bg-[#f0f0f0] opacity-65  hover:scale-105 hover:opacity-100 hover:shadown-xl rounded-xl shadow-md overflow-hidden max-w-sm hover:shadow-lg transition-all  h-full flex flex-col">
+
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="flex flex-col p-4 flex-grow">
                 <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
@@ -101,6 +102,7 @@ const ProjectCard = ({ project }) => {
                 </div>
             </div>
         </div>
+
     );
 };
 

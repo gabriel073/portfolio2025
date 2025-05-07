@@ -5,12 +5,10 @@ import Swal from 'sweetalert2';
 
 
 function Contact() {
-
     const form = useRef();
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
-
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -32,7 +30,6 @@ function Contact() {
         if (!form.current.message) {
             return setMessageError("Este campo no puede estar vacio, favor de ingresar un Mensaje");
         }
-
 
         emailjs.sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, VITE_PUBLIC_KEY)
             .then((result) => {
@@ -62,11 +59,9 @@ function Contact() {
     }
     const paternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return (
-        <div className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4 " id='contact'>
-            <div className=" m-auto w-96 spacing-[3] rounded-3xl border-solid border-black border-2 shadow-xl p-4">
-
-                <h1 className="text-4xl text-center mb-5" >Contacto</h1>
-
+        <div className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4" id='contact'>
+            <div className="m-auto w-96 spacing-[3] rounded-3xl border-solid border-black border-2 shadow-xl p-4 ">
+                <h1 className="text-4xl text-center mb-4" >Contacto</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>Nombre</label>
                     <input
@@ -111,7 +106,7 @@ function Contact() {
 
             </div >
             <hr className='border-solid border-slate-400 border-[0.5px] w-[98%] ' />
-            <div className="mt-[10px] text-center" >
+            <div className="mt-[16px] text-center h-18">
                 <p >By Gabriel 🤓</p>
             </div>
         </div>
