@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import "./style.css";
+import '../skills/style.css'
 
 
 function MenuFlotatnte() {
@@ -27,7 +28,7 @@ function MenuFlotatnte() {
         <section>
             <nav className=" menu_scale-up fade-away">
                 {mostrarMenu && (
-                    <div id="menu-flotante" className=" border-2 border-solid border-black  rounded-3xl text-center p-4 space-x-6 mt-7" >
+                    <div id="menu-flotante" className="w-full border-2 border-solid border-black  rounded-3xl text-center p-4 space-x-6 mt-7" >
                         <a href="#proyects">Projects</a>
                         <a href="#skills">Skills</a>
                         <a href="#contact">Contact</a>

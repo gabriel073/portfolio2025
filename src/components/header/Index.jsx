@@ -59,9 +59,9 @@ function Header() {
                 ref={headerRef}
                 className="border border-solid border-blue-500 rounded-3xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 w-full sm:w-[70%] md:w-[60%] lg:w-[50%] h-auto p-6 bg-cover shadow-indigo-200/80 shadow-2xl transition-all duration-150"
             >
-                <h1 className="text-4xl sm:text-5xl md:text-6xl text-black font-extrabold text-center mt-4 text-shadow-lg uppercase tracking-tight">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl text-black font-extrabold text-center mt-4 text-shadow-lg uppercase tracking-tight">
                     Fullstack
-                </h1>
+                </h2>
                 <h2 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-light flex justify-center sm:justify-end sm:mr-10 mt-[-10px] sm:mt-[-28px]">
                     Developer
                 </h2>

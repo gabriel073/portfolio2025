@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Pixelify Sans";
+  src: url("/src/fonts/Pixelify-Sans-Regular.woff2") format("woff2"),
+    url("/src/fonts/Pixelify-Sans-Regular.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pixelify-Sans2";
+  src: url("/src/fonts/Pixelify-Sans-Medium.woff2") format("woff2"),
+    url("/src/fonts/Pixelify-Sans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 3rem;
+}
+#menu-flotante {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.5rem;
+}

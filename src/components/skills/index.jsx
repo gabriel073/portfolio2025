@@ -1,10 +1,10 @@
-
+import './style.css'
 
 function Skills() {
     return (
-        <div id="skills" className="bg-[url('../public/assets/bg-exa_dark.jpg')] justify-center items-center flex flex-col  h-[50rem] opacity-85">
-            <h2 className="text-3xl font-bold text-center mb-36 text-slate-200 " id="skills" >Tecnologías</h2>
-            {/* flexDirection='row' flexWrap='wrap' gap='50' alignContent='center' justifyContent='center'  */}
+        <div id="skills" className="bg-[url('../public/assets/bg-exa_dark.jpg')] justify-center items-center flex flex-col  h-[42rem] opacity-85 p-10 space-y-14">
+            <h1 className=" text-center " id="skills" >Tecnologías</h1>
+
             <div className="flex row gap-6 flex-wrap w-[80%] justify-center items-center">
                 <img src='https://icongr.am/devicon/javascript-original.svg?size=64&color=currentColor' alt="icon-js" className=" hover:scale-150 hover:shadow-xl hover:shadow-neutral-300 transition-all" width='60' data-toggle="tooltip" title="Javascript" />
                 <img src="https://icongr.am/devicon/nodejs-plain.svg?size=64&color=currentColor" alt="icon-nodeJs" width='60' className="p-1 hover:scale-150 hover:shadow-xl hover:shadow-neutral-300  transition-all" data-toggle="tooltip" title="NodeJs" />
