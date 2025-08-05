@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "Pikapak",
         description: "Desarrollo de Landing Page, creación del diseño, adaptado a pantallas móbiles, más funcionalidades, como un formulario contacto, login controlado, registro de usuarios, recuperación de contraseña, notificaciones por mail, manejo de rutas, implementacion de CEO y google analitics para un buen posicionamiento y control de interacción en la web, despliegue en producción.",
-        image: "/../public/assets/pikapak.png",
+        image: "/../public/pikapak.png",
         technologies: ["Vite", "ReactJs", "Javascript", "axios", "react-router-dom", "Tailwind", "NodeJs", "Express", "JWT", "nodemailer", "prisma", "mysql", "git", "github", "scrum", "trello", "notion", "dotenv", "tailwindCSS", "PostgreSQL"],
         github: "https://github.com/gabriel073/pikapak",
         liveDemo: "https://pikapak.vercel.app/"
@@ -15,7 +15,7 @@ const projects = [
         id: 5,
         title: "Libreria Henry",
         description: "Un e-commerce de venta de libros físicos, con funciones como: logueo, panel de control de usuarios, favoritos, dark mode, cambio idioma, simulación de pago con tarjeta. Fue un proyecto con varios desarrolladores, donde se organizó y culminó éste trabajo organizado con metodología scrum.",
-        image: "/../public/assets/libreriaHenry.png",
+        image: "/../public/libreriaHenry.png",
         technologies: ["React", "Tailwind CSS", "Node.js", "Redux", "ChakraUI", "Javascript", "Express", "Nodemailer", "i18n", "postgresSQL", "MySQL", "Sequelize", "Git", "Github", "Scrum", "Trello", "Notion", "tailwindCSS"],
         github: "https://www.notion.so/Repos-App-Libreria-Henry-c8a1a2c5fc3948c09448243d5e1fc4dd",
         liveDemo: "https://henry-library.netlify.app/"
@@ -24,7 +24,7 @@ const projects = [
         id: 2,
         title: "MultiGames",
         description: "Multi Games es una aplicación web con un menú que contiene 3 juegos clásicos que atrapa al usuario a entrenerse y salir un poco de la rutina, el clásico juego de memoria donde hay que encontrar en un tablero ramdon, las 2 fichas que coinciden, el tipico tipeador de palabras por tiempo, y adivina pokemon donde aparece la silueta de personajes ramdon detrás de unas hierbas y tendrás que saber de quién se trata.",
-        image: "/../public/assets/multiGames.png",
+        image: "/../public/multiGames.png",
         technologies: ["React", "react-router-dom", "Chakra-ui", "Sweetalert2", "GIT", "GitHub"],
         github: "https://github.com/gabriel073/multi-games/",
         liveDemo: "https://multi-games.vercel.app/"
@@ -33,7 +33,7 @@ const projects = [
         id: 4,
         title: "Recipes App",
         description: "Recipes App fue realizada para consultar recetas, crear, actualizar, eliminar, podes filtrar por tipos, ordenar alfabéticamente, fue realizada durante el bootcamp soy henry.",
-        image: "/../public/assets/recipesApp.png",
+        image: "/../public/recipesApp.png",
         technologies: ["React", "Javascript", "Tailwind CSS", "Node.js", "Redux", "ChakraUI", "Express", "Git", "Github", "Scrum", "Notion", "dotenv", "axios"],
         github: "https://github.com/gabriel073/PI_FOOD",
         liveDemo: "https://youtu.be/8bP8FS9GXc0"
@@ -43,7 +43,7 @@ const projects = [
         id: 6,
         title: "Tu Asistencia",
         description: " Este proyecto pretende solucionar el ingreso y egreso del personal de determinado trabajo, contiene autentificación de administrador, notificación por mail al autenticar, un crud de empleados el cual se puede crear, modificar y eliminar, solicitud de informes por fecha, opciones de impresion de datos.",
-        image: "/../public/assets/tuAsistencia.png",
+        image: "/../assets/tuAsistencia.png",
         technologies: ["React", "Javascript", "typescript", "Vite", "Tailwind CSS", "Node.js", "ChakraUI", "Express", "Git", "Github", "Scrum", "Notion", "dotenv", "axios", "formik", "sweetalert2", "cors", "express", "nodemailer", "sequelize"],
         github: "https://github.com/molder26/tuasistencia/tree/gabyDev",
         liveDemo: "https://youtu.be/KbMPKyy1kQ8"
