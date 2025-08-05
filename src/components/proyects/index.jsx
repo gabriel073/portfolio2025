@@ -52,7 +52,7 @@ const projects = [
         id: 3,
         title: "PsicoEspacio",
         description: "Landing Page de un grupo de psicólogas que brindan su servicio en línea, este pryecto es interesante porque se trabajó con una diseñadora UI, es notable su trabajo, se tuvo que respetar las maquetas de figma con sus propiedades para llegar al diseño realizado, una gran experiencia del trabajo en equipo.-",
-        image: "/../public/assets/psicoEspacio.png",
+        image: "/../assets/psicoEspacio.png",
         technologies: ["HTML", "CSS", "Boostrap", "Figma", "Javascript", "scrum", "GIT", "GitHub"],
         github: "https://github.com/gabriel073/land_page_psicoEspacio",
         liveDemo: "https://psicoespacio-web.vercel.app/"
