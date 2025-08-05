@@ -28,11 +28,11 @@ function MenuFlotatnte() {
         <section>
             <nav className=" menu_scale-up fade-away">
                 {mostrarMenu && (
-                    <div id="menu-flotante" className="w-auto h-auto border-2 border-solid border-black  rounded-3xl text-center  p-4 space-x-6 mt-7 " >
-                        <a href="#proyects" className='text-blue-500 hover:text-blue-700 hover:text-3xl'>Proyectos</a>
-                        <a href="#skills" className='text-blue-500 hover:text-blue-700 hover:text-3xl'>Tecnologías</a>
-                        <a href="#contact" className='text-blue-500 hover:text-blue-700 hover:text-3xl'>Contacto</a>
-                        <a href="#about" className='text-blue-500 hover:text-blue-700 hover:text-3xl'>Sobre Mi</a>
+                    <div id="menu-flotante" className="w-auto h-auto border-2 border-solid border-black text-4xl  rounded-3xl text-center  p-4 space-x-6 mt-7 " >
+                        <a href="#proyects" className='text-blue-500 hover:text-blue-700 hover:underline '>Proyectos</a>
+                        <a href="#skills" className='text-blue-500 hover:text-blue-700 hover:underline '>Tecnologías</a>
+                        <a href="#contact" className='text-blue-500 hover:text-blue-700 hover:underline '>Contacto</a>
+                        <a href="#about" className='text-blue-500 hover:text-blue-700 hover:underline '>Sobre Mi</a>
                     </div>
                 )}
                 {mostrarMenu && (

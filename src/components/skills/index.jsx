@@ -3,7 +3,7 @@ import './style.css'
 function Skills() {
     return (
         <div id="skills" className="bg-gradient-to-b  from-blue-800  to-white bg-blur-b-xl p-4 flex flex-col  items-center justify-center h-[48rem] opacity-85 space-y-14">
-            <h1 className=" text-center " id="skills" >Tecnologías</h1>
+            <h1 className=" text-center text-4xl " id="skills" >Tecnologías</h1>
 
             <div className="flex row gap-6 flex-wrap w-[80%] justify-center items-center">
                 <img src='https://icongr.am/devicon/javascript-original.svg?size=64&color=currentColor' alt="icon-js" className=" hover:scale-150 hover:shadow-xl hover:shadow-neutral-300 transition-all" width='60' data-toggle="tooltip" title="Javascript" />
