@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -10,56 +10,64 @@ function Contact() {
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
 
+
+    const handleInputChange = () => {
+        setNameError(false);
+        setEmailError(false);
+        setMessageError(false);
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
         setNameError(false);
         setEmailError(false);
         setMessageError(false);
-        if (!form.current.name) {
-            return setNameError("Este campo no puede estar vacio, favor de ingresar un nombre");
-        }
-        if (!form.current.name.value.split("").every(char => isNaN(parseInt(char)))) {
-            return setNameError("Su nombre no puede contener numeros");
-        }
-        if (!form.current.name) {
-            return setEmailError("Este campo no puede estar vacio, favor de ingresar un Mail");
-        }
-        if (!paternEmail.test(form.current.email.value)) {
-            return setEmailError("No es un formato de Mail válido");
-        }
-        if (!form.current.message) {
-            return setMessageError("Este campo no puede estar vacio, favor de ingresar un Mensaje");
-        }
 
-        emailjs.sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, VITE_PUBLIC_KEY)
+        const name = form.current.user_name.value;
+        const email = form.current.user_email.value;
+        const message = form.current.message.value;
+
+
+        if (!name) return setNameError("Este campo no puede estar vacío");
+        if (!/^[a-zA-Z\s]+$/.test(name)) return setNameError("El nombre no puede contener números");
+
+        if (!email) return setEmailError("Este campo no puede estar vacío");
+        if (!paternEmail.test(email)) return setEmailError("No es un formato de mail válido");
+
+        if (!message) return setMessageError("Este campo no puede estar vacío");
+
+
+
+        emailjs
+            .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+                publicKey: import.meta.env.VITE_PUBLIC_KEY,
+            })
             .then((result) => {
                 console.log(result.text);
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'Mail enviado con exito!',
+                    title: '¡Mail enviado con éxito!',
                     showConfirmButton: false,
-                    timer: 1500
-                })
+                    timer: 1500,
+                });
                 form.current.reset();
-            }, (error) => {
-                console.log(error.text);
+            })
+            .catch((error) => {
+                console.error("Error al enviar el formulario:", error);
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "No se pudo enviar el formulario. Verificá los datos o intentá más tarde.",
+                });
             });
-    }
+    };
 
-    const handleInputChange = event => {
-        const { name, value } = event.target;
-        setNameError(false);
-        setEmailError(false);
-        setMessageError(false);
-        form({
-            ...form,
-            [name]: value
-        });
-    }
+
+
     const paternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return (
-        <div className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')]  p-4" id='contact'>
+        <div className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')]  p-4 pt-10" id='contact'>
             <div className="flex flex-col justify-center items-center w-[35%] spacing-[3] rounded-3xl border-solid ml-[32%] mb-[7%] border-black border-2 shadow-xl p-4 ">
                 <h1 className="text-4xl text-center mb-4" >Contacto</h1>
                 <form ref={form} onSubmit={sendEmail}>
@@ -110,7 +118,6 @@ function Contact() {
                     <p className=" text-sm text-black-500">
                         © {new Date().getFullYear()} By Gabriel Marzioli 🤓. Todos los derechos reservados.
                     </p>
-
 
                     <div className='flex items-center space-x-2'>
                         <span className="text-sm text-black-500 ">Mis Redes 👉</span>

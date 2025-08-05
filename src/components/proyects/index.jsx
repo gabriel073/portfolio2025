@@ -108,7 +108,7 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsGrid = () => {
     return (
-        <div className=" bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover ">
+        <div className=" bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4">
             <MenuFlotatnte />
             <div className="container mx-auto px-4 py-10 ">
                 <h1 className=" font-bold text-center text-gray-800 mb-6" id="proyects">Mis Proyectos</h1>

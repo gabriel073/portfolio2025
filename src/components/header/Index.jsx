@@ -54,7 +54,7 @@ function Header() {
     }, []); // Ejecuta solo una vez después del montaje
     return (
 
-        <div className="flex justify-center items-center min-h-screen bg-black p-4" id="about">
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black via-black to-white  bg-blur-b-xl p-4" id="about">
             <div
                 ref={headerRef}
                 className="border border-solid border-blue-500 rounded-3xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 w-full sm:w-[70%] md:w-[60%] lg:w-[50%] h-auto p-6 bg-cover shadow-indigo-200/80 shadow-2xl transition-all duration-150"
@@ -88,4 +88,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

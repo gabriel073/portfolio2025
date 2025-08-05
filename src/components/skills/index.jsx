@@ -2,7 +2,7 @@ import './style.css'
 
 function Skills() {
     return (
-        <div id="skills" className="bg-[url('../public/assets/bg-exa_dark.jpg')] justify-center items-center flex flex-col  h-[42rem] opacity-85 p-10 space-y-14">
+        <div id="skills" className="bg-gradient-to-b  from-blue-800  to-white bg-blur-b-xl p-4 flex flex-col  items-center justify-center h-[48rem] opacity-85 space-y-14">
             <h1 className=" text-center " id="skills" >Tecnologías</h1>
 
             <div className="flex row gap-6 flex-wrap w-[80%] justify-center items-center">
