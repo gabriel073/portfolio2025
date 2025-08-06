@@ -113,9 +113,9 @@ function Contact() {
                 </form>
             </div>
 
-            <hr className="border-t border-slate-400 my-8 w-[98%] " />
+            <hr className="border-t border-slate-400 my-8 w-[98%]" />
 
-            <footer className="w-full mt-8 py-4 px-6">
+            <footer className="w-full mt-8 py-4 px-4">
                 <div className="max-w-7xl  flex flex-col md:flex-row items-center justify-between">
                     {/* Texto del copyright */}
                     <p className="text-sm text-gray-700 text-center md:text-left">

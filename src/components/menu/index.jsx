@@ -58,7 +58,7 @@ export default function MenuFlotante() {
                 {mostrarMenu && (
                     <div
                         id="menu-flotante"
-                        className="fixed z-50 bottom-[7%] left-1/2 transform -translate-x-1/2 bg-[#f0f0f0]/90 border-2 border-black text-xl sm:text-2xl md:text-3xl rounded-3xl text-center p-4 w-[90%] max-w-xl flex flex-col sm:flex-row justify-center items-center gap-4 shadow-md"
+                        className="fixed z-50 bottom-[10%] left-1/2 transform -translate-x-1/2 bg-[#f0f0f0]/90 border-2 border-black text-xl sm:text-2xl md:text-3xl rounded-3xl text-center p-4 w-[90%] max-w-xl flex flex-col sm:flex-row justify-center items-center gap-4 shadow-md"
                     >
                         <a
                             href="#proyects"
