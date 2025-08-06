@@ -66,7 +66,7 @@ function Contact() {
     const paternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return (
         <div
-            className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4 pt-10"
+            className="bg-[url('../public/assets/bg-rombos-blueligth.jpg')] bg-cover p-4 pt-16"
             id="contact"
         >
             <div className="flex flex-col justify-center items-center w-full max-w-xl mx-auto rounded-3xl border border-black shadow-xl p-4">
