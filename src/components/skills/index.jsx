@@ -5,7 +5,7 @@ function Skills() {
         <div id="skills" className="bg-gradient-to-b  from-blue-800  to-white bg-blur-b-xl p-4 flex flex-col  items-center justify-center h-[48rem] opacity-85 space-y-14">
             <h1 className=" text-center text-4xl " id="skills" >Tecnologías</h1>
 
-            <div className="flex row gap-6 flex-wrap w-[90%] justify-center items-center mb-12">
+            <div className="flex row gap-6  flex-wrap w-[90%] justify-center items-center mb-12">
                 <img src='https://icongr.am/devicon/javascript-original.svg?size=64&color=currentColor' alt="icon-js" className=" hover:scale-150 hover:shadow-xl hover:shadow-neutral-300 transition-all" width='90' data-toggle="tooltip" title="Javascript" />
                 <img src="https://icongr.am/devicon/nodejs-plain.svg?size=64&color=currentColor" alt="icon-nodeJs" width='90' className="p-1 hover:scale-150 hover:shadow-xl hover:shadow-neutral-300  transition-all" data-toggle="tooltip" title="NodeJs" />
                 <img src="https://icongr.am/devicon/typescript-original.svg?size=64&color=currentColor" alt="icon-typescript" width='90' className="  hover:scale-150 hover:shadow-xl hover:shadow-neutral-300  transition-all" data-toggle="tooltip" title="Typescript" />
