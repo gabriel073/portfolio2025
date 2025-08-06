@@ -28,7 +28,7 @@ export default function MenuFlotante() {
     return (
         <section>
             {/* Esta es la tarjeta principal que queremos detectar */}
-            <div ref={tarjetaRef} id="tarjeta-principal" style={{ height: "400px" }}>
+            <div ref={tarjetaRef} id="tarjeta-principal" style={{ height: "50px" }}>
                 {/* Aquí puede ir la tarjeta, por ahora sólo es un placeholder */}
             </div>
             <nav className="menu_scale-up fade-away">
