@@ -1,10 +1,10 @@
 #menu-flotante {
   position: fixed;
-  top: 83%;
+  /* top: 83%; */
   /* width: 40%; */
   background-color: #f0f0f0;
   z-index: 1000;
-  left: 30%;
+  /* left: 30%; */
   opacity: 0.8;
 }
 
